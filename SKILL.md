@@ -9,15 +9,15 @@ Answer questions about which LLM models are available in GitHub Copilot and what
 
 ## Source of truth
 
-Use the upstream JSON as the source of truth:
+Use the upstream compact JSON as the source of truth:
 
-`https://raw.githubusercontent.com/sollie/copilot-model-availability/main/copilot_models.json`
+`https://raw.githubusercontent.com/sollie/copilot-model-availability/main/copilot_models.compact.json`
 
-Do not answer from memory when the user asks about model availability, retirement, preview/GA status, or multipliers. Fetch the JSON first and base the answer on matching entries.
+Do not answer from memory when the user asks about model availability, retirement, preview/GA status, or multipliers. Fetch the compact JSON first and base the answer on matching entries.
 
 You may reuse a previously fetched copy of the JSON if it was fetched in the same agent session and less than one hour ago. If the cached copy is older than one hour, fetch the JSON again before answering.
 
-If the JSON cannot be fetched, fall back to the GitHub Docs page:
+If the compact JSON cannot be fetched, fall back to the GitHub Docs page:
 
 `https://docs.github.com/en/enterprise-cloud@latest/copilot/reference/ai-models/supported-models#supported-ai-models-in-copilot`
 

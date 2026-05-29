@@ -4,7 +4,7 @@ Claude Skill compatible guidance for answering questions about GitHub Copilot mo
 
 The skill fetches its compact source of truth directly from:
 
-`https://raw.githubusercontent.com/sollie/copilot-model-availability/main/copilot_models.json`
+`https://raw.githubusercontent.com/sollie/copilot-model-availability/main/copilot_models.compact.json`
 
 That upstream file is generated from GitHub's supported Copilot models documentation and checked for updates every hour.
 
