@@ -14,6 +14,22 @@ If the compact JSON cannot be fetched, the skill falls back to the GitHub Docs s
 
 `https://docs.github.com/en/enterprise-cloud@latest/copilot/reference/ai-models/supported-models#supported-ai-models-in-copilot`
 
+## Installation
+
+Install the skill with the `skills` CLI:
+
+```bash
+npx skills add sollie/copilot-model-skill --global --agent claude-code
+```
+
+Restart your agent session after installation so the new skill is loaded.
+
+To choose the install scope or agent interactively, omit the flags:
+
+```bash
+npx skills add sollie/copilot-model-skill
+```
+
 ## Files
 
 - `SKILL.md` - Claude Skill instructions and trigger description.
